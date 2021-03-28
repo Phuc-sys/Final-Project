@@ -1,0 +1,114 @@
+body{
+  background: #f8f8f8;
+}
+
+.header{
+    height: 120px;
+    padding: 0 40px;
+    z-index: 999;
+}
+.content {
+    margin-top: -50px;
+}
+.left {
+    height: 81vh;
+    background-color: #f3f3f3;
+    padding: 40px;
+}
+.left img{
+    width: 122%;
+    margin-top: 100px;
+    right: 50px;
+}
+.left p{
+    margin-top: 30%;
+    line-height: 30px;
+    color: #975f56;
+    font-weight: 700;
+    font-size: 24px;
+}
+.right{
+  padding: 100px 0;
+}
+.text-wrap p{
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+form {
+    margin-left: 210px;
+    margin-right: 200px;
+}
+.input-group img {
+    border: 1px solid lightgray;
+    padding: 0px 7px;
+    border-radius: 7px 0 0 7px;
+}
+.form-check{
+  margin-bottom: 50px;
+}
+.text-wrap a {
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+.text-wrap a:hover{
+  color:#007bff;
+}
+.btn-danger:hover {
+    color: red;
+    background: #ffebe7;
+    border-color: transparent;
+}
+.btn-danger{
+    padding: 10px 24px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* break point layout */
+@media screen and (max-width: 760px) {
+  .header{
+    background-color:#fff5f3;
+    margin: 0 -22px 62px -14px;
+    height: 62px;
+}
+.header img {
+    width: 40px;
+    height: 40px;
+    margin: 0 30px 9px -22px;
+}
+.header .text {
+    font-size: 13px;
+    margin-bottom: -15px;
+    margin-right: -24px;
+}
+.left p{
+    font-size: 19px;
+}
+.left img{
+    width: 108%;
+}
+.right{
+    padding: 17px 0;
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 76%;
+    background: hsla(0,0%,100%,.85);
+    box-shadow: 0 4px 4px hsl(0deg 0% 79% / 50%);
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.text-wrap h1 {
+    font-size: 19px;
+}
+.text-wrap p {
+    font-size: 13px;
+}
+form {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+}

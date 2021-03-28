@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- font awsome version 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+  </head>
+  <body onload="render()" >
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm ml-3 mr-3 fixed-top">
+      <a class="navbar-brand ml-2" href="#">
+      <img width="100px" src="images/brand.png" alt="">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="wrapper ml-5">
+      <h4 class="red-text">Work Hours</h4>
+      <div class="icon-wrapper mt-3">
+      <i class="fas fa-calendar-check"> Monday - Sunday</i>
+      <i class="fas fa-clock ml-3"> 9:00 AM - 10:00 PM</i>
+    </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pizza" class="nav-link">Pizza</a>
+        </li>
+        <li class="nav-item">
+          <a href="#chicken" class="nav-link">Chicken</a>
+        </li>
+        <li class="nav-item">
+          <a href="#salad" class="nav-link">Salad</a>
+        </li>
+        <li class="nav-item d-flex log">
+          <a href="login.html" class="nav-link"><i class="far fa-user"></i> Log in</a>
+          <span class="nav-link">/</span>
+          <a href="#" class="nav-link">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link">
+            <button type="button" class="btn btn-transparent"><i class="fas fa-shopping-cart"></i> Cart
+              <i id="cart_n"></i>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" alt="First slide">
+         <img src="images/carousel-1.png" class="d-block w-100">
+        </div>
+      <div class="carousel-item" alt="Second slide">
+         <img src="images/carousel-2.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item" alt="Third slide">
+         <img src="images/carousel-3.png" class="d-block w-100">
+      </div>
+     </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div><!-- end of carousel -->
+
+    <div class="container">
+      <div class="list">
+      <h2>Menu</h2>
+      <section id="pizza">
+      <div class="wrap-container">
+        <hr>
+        <h2>Pizza</h2>
+        <div class="row mt-4" id="pizzaDiv">
+        </div><!-- end of row -->
+          <button class="btn  btn-light btn-watch mt-4" type="button">See more <i class="fas fa-plus"></i></button>
+      </div><!-- end of wrap-container -->
+      </section>
+
+      <section id="chicken">
+      <div class="wrap-container ">
+        <hr>
+        <h2>Chicken</h2>
+        <div class="row mt-4" id="chickenDiv">
+        </div><!-- end of row -->
+          <button class="btn  btn-light btn-watch mt-4" type="button">See more <i class="fas fa-plus"></i></button>
+      </div><!-- end of wrap-container -->
+    </section>
+
+    <section id="salad">
+      <div class="wrap-container ">
+        <hr>
+        <h2>Salad</h2>
+        <div class="row mt-4" id="saladDiv">
+        </div><!-- end of row -->
+          <button class="btn  btn-light btn-watch mt-4" type="button">See more <i class="fas fa-plus"></i></button>
+      </div><!-- end of wrap-container -->
+    </section>
+  </div><!-- end of list -->
+    <div class="" id="popDiv">
+    </div>
+    </div> <!-- end of container -->
+
+<footer class="mt-5">
+  <div class="container-fluid d-flex">
+    <div class="sub mt-5 ml-5">
+      <a href="#"
+        ><img src="images/brand.png" width="250px" alt="Logo"
+      /></a>
+      <ul class="footer-contact-icon d-flex">
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class ="sub d-flex ml-5 mt-5">
+        <li class="footer-info-item col-6 ml-5 ">
+          <h6>INFORMATION</h6>
+          <p><a href="#">Restaurant system</a></p>
+          <p><a href="#">Brand story</a></p>
+          <p><a href="#">Member Policies</a></p>
+          <p><a href="#">News and events</a></p>
+          <p><a href="#">Recruitment</a></p>
+        </li>
+        <li class="footer-info-item add-ref col-6">
+          <h6>CUSTOMER SERVICE</h6>
+          <p><a href="#">Contact</a></p>
+          <p><a href="#">How to Order</a></p>
+          <p><a href="#">Delivery Policies</a></p>
+          <p><a href="#">Privacy Policies</a></p>
+          <p><a href="#">Terms and Conditions</a></p>
+        </li>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.630773293551!2d106.67998301474876!3d10.762912992330719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1c06f4e1dd%3A0x43900f1d4539a3d!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puIC0gxJDhuqFpIGjhu41jIFF14buRYyBHaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1615257914892!5m2!1svi!2s" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="mt-5"></iframe>
+      </div>
+
+
+    <div class="footer-contact">
+      <div class="d-flex justify-content-center align-items-center copyright">
+        <p>© Copyright 2021 THE SOLELY FOOD. All rights reserved.</p>
+      </div>
+      <p>Office: VNUHCM - University of Science, Vietnam </p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Sweet Alert 2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

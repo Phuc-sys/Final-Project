@@ -1,0 +1,44 @@
+nav {
+  background: white;
+  box-shadow: 1px 1px 3px #efecec;
+  height: 120px;
+}
+.navbar-nav > li{
+  margin-left:25px;
+  font-weight: 600;
+}
+.nav-item button{
+  border-radius: 11px;
+  padding: 10px 17px;
+  color: white;
+  background: crimson;
+}
+.red-text{
+  color: #f04d4d;
+}
+
+.container{
+  margin-top: 20vh;
+}
+@media only screen and (max-width: 760px) {
+  .navbar-toggler{
+		margin-top: -35px;
+		margin-right: -34vw;
+	}
+	.navbar img{
+		margin-top: -9px;
+	}
+	.navbar-collapse{
+		background: wheat;
+		margin: -13px -16px 0 -16px;
+	}
+	.wrapper{
+		opacity: 0 !important;
+	}
+	.sticky{
+		height: 96px;
+	}
+	li.nav-item.d-flex.log > a {
+    padding: 7px 17px;
+}
+}

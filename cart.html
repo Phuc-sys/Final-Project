@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- font awsome version 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+  </head>
+  <body onload="render()">
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm ml-3 mr-3 fixed-top">
+      <a class="navbar-brand ml-2" href="#">
+      <img width="100px" src="images/brand.png" alt="">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="wrapper ml-5">
+      <h4 class="red-text">Work Hours</h4>
+      <div class="icon-wrapper mt-3">
+      <i class="fas fa-calendar-check"> Monday - Sunday</i>
+      <i class="fas fa-clock ml-3"> 9:00 AM - 10:00 PM</i>
+    </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-flex">
+          <a href="login.html" class="nav-link"><i class="far fa-user"></i> Log in</a>
+          <span class="nav-link">/</span>
+          <a href="#" class="nav-link">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <button type="button" class="btn btn-transparent"><i class="fas fa-shopping-cart"></i> Cart
+              <i id="cart_n"></i>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+    <div class="container">
+      <main role="main">
+        <div class="row">
+          <div class="col">
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="table">
+
+                </tbody>
+                <tfoot id="foot">
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
